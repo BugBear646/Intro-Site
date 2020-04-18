@@ -18,7 +18,7 @@
         margin:0;
         box-sizing: border box;
     }
-#intro{
+body{
   height:100vh;
   width:100%;
   background-position:bottom;
@@ -106,20 +106,62 @@
 .text
 {
   position:absolute;
-  left:38%;top:60%;
+  left:39.3%;top:65%;
   font-size:70px;
   font-family:'FV Almelo';
   color:white;
 }
-@media(max-width:700px)
+.nav
+{
+  margin-left:440px;
+}
+ul { 
+  margin-right:150px; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+@media(max-width:499px)
 {
  .pic{
     width:200px;
     border-radius: 50%;
     z-index: 999;
-    position:absolute;
-    right:100px;
-    top:20%;
+    margin-right: 300px;
 } 
 .text{
   position:absolute;
@@ -128,17 +170,65 @@
   font-family:'FV Almelo';
   color:white;
 }
+.nav
+{
+  margin-left:5px;
+}
+ul { 
+  margin-right:50px; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width:200px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 5px 0;
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5em;
+  
+  display: inline-block;
+  padding: 5px 6.6px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
 }
 </style>
 </head>
 
 <body>
-<div id="intro">
+<div class="nav"><ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Portfolio</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+</div>
 <div id='stars'></div>
 <div id='stars2'></div>
 <div id='stars3'></div>
 <div class="text">ANIKET JHA</div>
 <div><img class="pic" src="ani.jpg"></div>
-</div>
 </body>
 </html>
