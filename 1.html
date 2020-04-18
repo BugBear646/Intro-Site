@@ -35,6 +35,13 @@ body{
     format('truetype');
 }
 @font-face {
+  font-family: 'Rhapsodize';
+  src: 
+    local('Rhapsodize'),
+    local('Rhapsodize'),
+    url('fonts/Rhapsodize Slim_PersonalUseOnly.ttf') 
+    format('truetype');}
+@font-face {
   font-family: 'Alex Brush';
   src: 
     local('Alex Brush'),
@@ -173,6 +180,21 @@ a:hover:after {
   width: 100%; 
   left: 0; 
 }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   font-family:sans-serif;
+   letter-spacing:0.1em;
+   color:white;
+   font-size:10px;
+}
+hr{
+  margin-left: 350px;
+  margin-right:350px;
+}
 
 @media(max-width:499px)
 {
@@ -251,6 +273,17 @@ a:hover:after {
   word-spacing:0.1em;
   content: ""
 }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   font-family:sans-serif;
+   letter-spacing:0.0em;
+   color:white;
+   font-size:9px;
+}
 }
 </style>
 </head>
@@ -267,9 +300,11 @@ a:hover:after {
 <div id='stars2'></div>
 <div id='stars3'></div>
 <div><u class="text">ANIKET JHA</u>
-  <span class="ana" style="color:pink">Before someone in a time machine traps you in a time loop, forces you in a paradox alters your timeline, or unintentionally erases your existence never forget to code.</span>
+  <span class="ana" style="color:pink">Before someone in a time machine traps you in a time loop, forces you in a paradox alters your timeline, or unintentionally erases your existence,never forget to code.</span>
 </div>
-
 <div><img class="pic" src="ani.jpg"></div>
+<div class="footer">
+  <p>Copyright &copy; 2020:<b>Bugbear Ventures</b></p>
+</div>
 </body>
 </html>
