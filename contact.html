@@ -153,8 +153,130 @@ li {
 .fa-github{
   background: #8B008B;
   color: white;}
-  </style>
-  </head>
+
+
+
+@media(max-width:499px)
+{
+  body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #2851A6 url("kavi.gif") left repeat-x;
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+  .nav
+{
+  margin-left:25px;
+}
+ul { 
+  margin-right:50px; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width:200px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 5px 0;
+}
+.n {
+  color:white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.0em;
+  
+  display: inline-block;
+  padding: 5px 6.6px;
+  position: relative;
+}
+.n:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background:#ff8c00;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.n:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.ana
+{
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:50px;
+  position:absolute;
+  top:73%;
+  font-size:22px;
+  text-align:center;
+  display:flex;
+  flex-wrap:wrap;
+  font-family: Alex Brush;
+  word-spacing:0.1em;
+  content: ""
+}
+.en 
+{position:absolute;
+  top:60% ;
+  left:50px;
+}
+ .fa {
+  margin-right:10px;
+  padding: 10px;
+  font-size: 15px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+   border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.9;
+    width:60px;
+    font-size:23px;
+    border radius:50%;
+}
+
+.fa-facebook {
+  background:#0000A0 ;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github{
+  background: #8B008B;
+  color: white;}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   font-family:sans-serif;
+   letter-spacing:0.0em;
+   color:white;
+   font-size:9px;
+}
+}
+
+</style> 
+</head>
   
 
 <body>
