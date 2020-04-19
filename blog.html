@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Das Mappe</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+<style>
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'FV Almelo';
+  src: url('fonts/fv_almelo-webfont.woff'); 
+  src: 
+    local('FV Almelo'),
+    local('FV Almelo'),
+    url('fonts/fv_almelo-webfont.ttf') 
+    format('truetype');
+}
+@font-face {
+  font-family: 'Alex Brush';
+  src: 
+    local('Alex Brush'),
+    local('Alex Brush'),
+    url('fonts/AlexBrush-Regular.ttf') 
+    format('truetype');}
+
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+svg {
+  position: absolute;
+}
+
+
+
+.wrapper {
+  width: 100%;
+  height:20vh;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#intro{
+  height: 2%;
+  width: 10%;
+  margin: 30px auto;
+  padding-right:300px;
+  position: relative;
+    filter: url(#goo);
+
+}
+#intro .text{
+  position: absolute;
+  left: 0%;
+  font-family: 'FV Almelo';
+  font-size:100px;
+  z-index: 999;
+  color: #FCDFFF;
+}
+
+#intro  .drop{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #FCDFFF;
+  position: absolute;
+  top: 50%;
+  left:48.7%;
+  transform: translate(120%, -800%) scaleX(0.5);
+  animation: move 6s cubic-bezier(1, 0.04, 0.74, 0.2) infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(120%, -800%) scaleX(0.2);
+    height: 60px;
+  }
+  30% {
+    transform: translate(120%, -200%);
+    height: 30px;
+  }
+  70% {
+    transform: translate(120%, 100%);
+    height: 30px;
+  }
+  100% {
+    transform: translate(120%, 800%) scaleX(0.2);
+    height: 60px;
+  }
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #fff;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <svg>
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="name"/>
+        <feColorMatrix in="name" mode="matrix" values="1 0 0 0 0
+                                                       0 1 0 0 0
+                                                       0 0 1 0 0
+                                                       0 0 0 15 -10" result="b"/>
+
+        <feBlend in="SourceGraphic" in2="b" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="wrapper">
+    <div id="intro">
+      <p class="text">EMPORIA</p>
+             <div class="drop"></div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
