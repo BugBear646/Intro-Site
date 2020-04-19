@@ -173,12 +173,11 @@ li {
 }
 
 /* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
+.res {
+  max-width: 100%;
   height:auto;
   padding: 20px;
-  border-radius:10px;
+  border-radius:20px;
 }
 
 /* Add a card effect for articles */
@@ -207,10 +206,16 @@ li {
    color:white;
    font-size:13px;
 }
+.ad
+{
+    text-decoration: none;
+    color:purple;
+}
+.ad:hover{
+    color:red;
+}
 
 
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -367,35 +372,56 @@ li {
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>The Educated Fools</h2>
+      <h2>The Next Generation</h2>
       <h5 style="padding-bottom:10px">April 19,2020</h5>
-      <div class="fakeimg" style="height:400px;background-image:url(e4.jpg);"></div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <img class="res" src="e4.jpg">
+      <p></p>
+      <p>Whatever you might think of people who are obsessed with taking selfies (I’ve taken a few…so you can start there), something in the culture is changing.
+<br>
+Something big.
+
+And it has implications for all of us who lead, parent and frankly, who simply live. Cultural shifts do that.
+
+And as easy as it is to pick on millennials (people born between the early 80s and early 2000s) and call them the selfie generation, I think it’s a little broader than that.
+
+In fact, I’ve seen the trait I’m writing about today embodied by 18-year-olds, 45-year-olds and even in 75-year-olds.
+<br>
+What’s the issue?
+An obsession with self. 
+<br>
+What if the obsession is deeper than you think?
+<br>
+And what if it’s harming you more and the people around you more than you think?
+<br>
+Great conversation is an art. It’s a two-way exchange of ideas and so much more, usually characterized by one person taking a deep interest in the other or in an idea.
+
+Increasingly, I’ve been in personal conversations with people of all ages (including seniors) in which true conversation has proven difficult.
+
+In too many cases, conversation has become talking about yourself to another person, which is really not conversation at all. It’s become like a tag team, where I’ll talk about me for two minutes and then stop, so you can talk about you for two minutes, and then I’ll go back to talking about me for a bit, and then you talk about you again…and so on.
+<br>
+"Talking past each other aboutyourself is not a conversation,but increasingly it seems to pass for one.""
+</p>
     </div>
     <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Hour of code</h2>
+      <h5>Apr 19, 2020</h5>
+      <img class="res" src="e5.jpg">
+      <p>Literacy in Coding is an advantage in this technology-driven economy.</p>
+      <p>We make decisions everyday,for example before you go outside you could have an if statement that if it's raining than I will take my umbrella or jacket, and computers are amazing once you decide those kind of statements,that they can reliably execute those things at unbelievable speed.Before six months I was one among you,asking myself that what is the need to code?there are numerous jobs where nothing like softwares and programming would be ever needed.Why to just pile up the crowd of coders,we can leave a better life without programming and programs.So now the question arises what is the need of knowledge,so that we can keep learning to adapt to new enviroment.Coding is needed ,it may seems intimidating what isn''t.Modern World seems to be complete but it is not.
+      More than half of projected STEM (science, technology, engineering and mathematics) jobs are in computing occupations. There is more demand for people who can write computer programmes than there is supply.Coding is the new buzz language of today’s tech-savvy world. No matter what the occupation is, it would surely coincide with using technology, and those who know how to code, which is the basis of computer science programming language, would surely be at an advantage.It is evident that we are lagging behind by not tapping into this progress at an early stage, simultaneously with the rest of the worldWe have to wake up to the call of the 21st century’s lifestyle, job opportunities, building human capital and experts who are able to thrive in this era. We are the first generation in this world ever to use technology in such a trendy and futuristically cultured way. We need to be on par with the world in creating technological innovations and prospects instead of just being mere consumers of these innovations.</p><p>"Everybody in this country should learn to program a computer, because it teaches you how to think”<br>— Steve Jobs</p>
     </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h2 style="font-family:'FV Almelo';padding-bottom:10px">EMPORIA</h2>
+      <h5>Last Updated:19 April,2020<br>
+      The blog made to promote the unreads.At the time of this lockdown,stand together by not standing together.<br>Stay home,Stay safe,Be Creative.</h5>
     </div>
     <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
+      <h2 style="padding-bottom:10px">COVID ADVISORIES</h3>
+      <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="ad">WHO COVID-19</a><br>
+      <a href="https://www.google.com/intl/en_in/covid19/" class="ad">Google COVID Advisory</a><br>
+      <a href="https://www.mygov.in/covid-19/"class="ad">Goverement of India</a>
     </div>
   </div>
 </div>
