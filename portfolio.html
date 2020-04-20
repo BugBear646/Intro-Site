@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Das Mappe</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+
+ <style>
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'FV Almelo';
+  src: url('fonts/fv_almelo-webfont.woff'); 
+  src: 
+    local('FV Almelo'),
+    local('FV Almelo'),
+    url('fonts/fv_almelo-webfont.ttf') 
+    format('truetype');
+}
+@font-face {
+  font-family: 'Quikhand';
+  src: 
+    local('Quikhand'),
+    local('Quikhand'),
+    url('fonts/Quikhand.ttf') 
+    format('truetype');}
+
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  padding:20px;
+  background:#010101;
+} 	
+.nav
+{
+  margin-left:440px;
+}
+ul { 
+  margin-right:150px; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+.n {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.n:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background:#ff8c00;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.n:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.name
+{   margin-top:50px;
+	margin-left:10%;
+	margin-right:10%;
+	color:#a0fc24;
+	font-family:FV Almelo;
+	font-size:30px;
+}
+.under
+{
+  width:100%;
+  height:5px;
+  background:linear-gradient(45deg, #a0fc24, #c8c487, #d786c5, #d221ff);
+  animation: lustreanim 15s ease infinite;
+}
+@keyframes lustreanim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.text
+{
+ color:white;
+ margin-top:20px;
+ padding-right:0%;
+ font-family:'Quikhand';
+ word-spacing:0.2em;
+ letter-spacing:0.1em;
+}
+.p:hover
+{
+  color:red;
+}
+.footer {
+   position:relative;
+   left: 0%;
+   padding-top:15px;
+   bottom: 0%;
+   width: 100%;
+   text-align: center;
+   font-family:sans-serif;
+   letter-spacing:0.1em;
+   color:white;
+   font-size:13px;
+}
+@media(max-width:499px)
+{
+	.name
+{   margin-top:20px;
+	margin-left:10%;
+	margin-right:10%;
+	color:#a0fc24;
+	font-family:FV Almelo;
+}
+.under
+{
+  width:100%;
+  height:2.5px;
+  background:linear-gradient(45deg, #a0fc24, #c8c487, #d786c5, #d221ff);
+  animation: lustreanim 15s ease infinite;
+}
+@keyframes lustreanim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.text
+{
+ color:white;
+ margin-top:10px;
+ padding-right:10%;
+ font-family:'Quikhand';
+ word-spacing:0.1em;
+ letter-spacing:0.05em;
+}
+  .nav
+{
+  margin-left:15px;
+}
+ul { 
+  margin-right:50px; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width:200px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 5px 0;
+}
+.n {
+  color:white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.0em;
+  
+  display: inline-block;
+  padding: 5px 6.6px;
+  position: relative;
+}
+.n:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background:#ff8c00;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.n:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.footer {
+   position:relative;
+   left: 0;
+   padding-top:9px;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   font-family:sans-serif;
+   letter-spacing:0.0em;
+   color:white;
+   font-size:9px;
+}
+}
+ </style>
+}
+
+</head>
+<body>
+<div class="nav"><ul>
+  <li><a class="n" href="Home.html">Home</a></li>
+  <li><a class="n" href="#"  style="color:#ff8c00">Portfolio</a></li>
+  <li><a class="n" href="blog.html">Blog</a></li>
+  <li><a class="n" href="contact.html">Contact</a></li>
+ </ul>
+</div>
+<div class="name">
+<h1>About me.</h1>
+<div class="under"></div>
+<div class="text" ><p>I am a first year B.Tech undergraduate at IIT Kharagpur residing currently in Bokaro,Jharkhand.I am currently a trainee at Team KART Formula SAE Team,IIT Kharagpur .So everything seems me fascinating unless tried.This is a project site for Spring Fest Online Web Summmer Training Workshop 2020.I hope you had gone through the compete website and if not please go through it.It will hardly take 5 mins.Any inferior or inappropriate use of the website elements is strictly prohibited.I had acquired the skills to make this website from Udemy's The Complete Web Developer Course 2.0 and Harvard's CS50's Web Programming with Python and Javascript.This site is completely based on HTML5 and CSS3 and I suggest Google Chrome as a browswer for a better view.</p>
+<br><p>I had used multiple common animations,fonts and gradients to make my website attractive and eyes-fonding.I had used darker themes.I had used media queries and flex-box to make the site responsive.I had used Font-awesome icon library in my Contact page for social-media icons.The Bugbear Ventures in the copyright footer is just an imaginary corporate venture owned by me.</p><br>
+<p>I request you to text your reviews and suggestions about this website.You can <a class="p" href="contact.html" style="text-decoration:none">contact</a> me for anything you want to know.</p><br><b>CONTACT NO.</b>  +91-6205484451
+<p style="text-align: right">-Aniket Jha
+</div>
+</div>
+<div class="footer">
+  <p>Copyright &copy; 2020:<b>Bugbear Ventures</b></p>
+</div>
+</body>
+</html>
