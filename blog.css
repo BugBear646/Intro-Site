@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'FV Almelo';
+  src: url('fonts/fv_almelo-webfont.woff'); 
+  src: 
+    local('FV Almelo'),
+    local('FV Almelo'),
+    url('fonts/fv_almelo-webfont.ttf') 
+    format('truetype');
+}
+@font-face {
+  font-family: 'Alex Brush';
+  src: 
+    local('Alex Brush'),
+    local('Alex Brush'),
+    url('fonts/AlexBrush-Regular.ttf') 
+    format('truetype');}
+
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  padding:20px;
+  background:#212931;
+}
+.nav
+{
+  margin-left:440px;
+}
+ul { 
+  margin-right:150px; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+.n {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.n:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background:#ff8c00;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.n:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.wrapper {
+  width: 100%;
+  height:30vh;
+  margin-top:20px;
+  overflow: hidden;
+  background: linear-gradient(45deg, #ee6a52, #e73c8c, #23a6d4, #24d5ab);
+  background-size: 400% 400%;
+  animation: lustreanim 10s ease infinite;
+  border-radius:15px;
+}
+
+@keyframes lustreanim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#intro{
+  height: 2%;
+  width: 10%;
+  margin: 50px auto;
+  padding-right:470px;
+  position: relative;
+
+}
+#intro .text{
+  position: absolute;
+  left: 0%;
+  font-family: 'FV Almelo';
+  font-size:150px;
+  z-index: 999;
+  color: #FCDFFF;
+}
+
+#intro  .drop{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #FCDFFF;
+  position: absolute;
+  top: 50%;
+  left:51.5%;
+  transform: translate(120%, -800%) scaleX(0.5);
+  animation: drop 6s cubic-bezier(1, 0.04, 0.74, 0.2) infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(120%, -800%) scaleX(0.2);
+    height: 50px;
+  }
+  30% {
+    transform: translate(120%, -200%);
+    height: 30px;
+  }
+  70% {
+    transform: translate(120%, 100%);
+    height: 30px;
+  }
+  100% {
+    transform: translate(120%, 800%) scaleX(0.2);
+    height: 60px;
+  }
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.res {
+  max-width: 100%;
+  height:auto;
+  padding: 20px;
+  border-radius:20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color:#aaa;
+   padding: 20px;
+   margin-top: 20px;
+   border-radius:15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+   position:relative;
+   left: 0%;
+   padding-top:15px;
+   bottom: 0%;
+   width: 100%;
+   text-align: center;
+   font-family:sans-serif;
+   letter-spacing:0.1em;
+   color:white;
+   font-size:13px;
+}
+.ad
+{
+    text-decoration: none;
+    color:purple;
+}
+.ad:hover{
+    color:red;
+}
+
+
+@media screen and (max-width: 600px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+@media(max-width:499px)
+{
+  .wrapper {
+  width: 100%;
+  height:20vh;
+  margin-top:20px;
+  overflow: hidden;
+  background: linear-gradient(45deg,#ee6a52, #e73c8c, #23a6d4, #24d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  border-radius:15px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#intro{
+  height: 2%;
+  width: 10%;
+  margin: 30px auto;
+  padding-right:300px;
+  position: relative;
+
+}
+#intro .text{
+  position: absolute;
+  left: 14%;
+  font-family: 'FV Almelo';
+  font-size:70px;
+  z-index: 999;
+  color: #FCDFFF;
+}
+
+#intro  .drop{
+  height: 15px;
+  width: 15px;
+  border-radius:50%;
+  background-color: #FCDFFF;
+  position: absolute;
+  top: 50%;
+  left:51%;
+  transform: translate(120%, -800%) scaleX(0.5);
+  animation: drop 6s cubic-bezier(1, 0.04, 0.74, 0.2) infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(120%, -800%) scaleX(0.2);
+    height: 30px;
+  }
+  30% {
+    transform: translate(120%, -200%);
+    height: 15px;
+  }
+  70% {
+    transform: translate(120%, 100%);
+    height: 15px;
+  }
+  100% {
+    transform: translate(120%, 800%) scaleX(0.2);
+    height: 30px;
+  }
+}
+  .nav
+{
+  margin-left:15px;
+}
+ul { 
+  margin-right:50px; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width:200px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 5px 0;
+}
+.n {
+  color:white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.0em;
+  
+  display: inline-block;
+  padding: 5px 6.6px;
+  position: relative;
+}
+.n:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background:#ff8c00;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.n:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.footer {
+   position:relative;
+   left: 0;
+   padding-top:9px;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   font-family:sans-serif;
+   letter-spacing:0.0em;
+   color:white;
+   font-size:9px;
+}
+}
