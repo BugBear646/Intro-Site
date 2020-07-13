@@ -12,6 +12,13 @@
     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+     jQuery(window).load(function()
+        {
+            jQuery("#loader").fadeOut(500);
+        });
+</script>
 <style >
     *{
         padding:0;
@@ -25,6 +32,16 @@ body{
   background: radial-gradient(ellipse at bottom, #18232f 0%, #07080c 100%);
   overflow: hidden;
 }
+  #loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('https://media.giphy.com/media/mBMdeZHp6bqfkL4vBI/giphy.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+  
 @font-face {
   font-family: 'FV Almelo';
   src: url('fonts/fv_almelo-webfont.woff'); 
@@ -289,6 +306,9 @@ a:hover:after {
 </head>
 
 <body>
+  
+  <div id="loader"></div>
+  
 <div class="nav"><ul>
   <li><a href="#" style="color:#ff8c00">Home</a></li>
   <li><a href="portfolio.html">Portfolio</a></li>
