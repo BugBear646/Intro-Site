@@ -12,6 +12,13 @@
     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+     jQuery(window).load(function()
+	{
+            jQuery("#loader").fadeOut(500);
+        });
+    </script>
 
  <style>
 
@@ -45,7 +52,17 @@ body {
   font-family: Arial;
   padding:20px;
   background:#010101;
-} 	
+} 
+	 #loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('https://media.giphy.com/media/mBMdeZHp6bqfkL4vBI/giphy.gif') 50% 50% no-repeat rgb(249,249,249);
+
+}
 .nav
 {
   margin-left:440px;
@@ -237,6 +254,9 @@ li {
 
 </head>
 <body>
+	
+<div id="loader"></div>	
+	
 <div class="nav"><ul>
   <li><a class="n" href="Home.html">Home</a></li>
   <li><a class="n" href="#"  style="color:#ff8c00">Portfolio</a></li>
